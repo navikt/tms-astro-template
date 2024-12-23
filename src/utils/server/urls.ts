@@ -16,17 +16,17 @@ export const getEnvironment = () => {
 
 type EnvUrl = { development: string; production: string; local: string };
 
-const UTKAST_API_URL = {
-  local: "http://localhost:3000/utkast/v2/utkast",
-  development: "http://tms-utkast/v2/utkast",
-  production: "http://tms-utkast/v2/utkast",
+const EXAMPLE_API_URL = {
+  local: "http://localhost:3000/api/tms-astro-template",
+  development: "http://example-your-api-app/api/something",
+  production: "http://example-your-api-app/api/something",
 };
 
 const BASE_URL: EnvUrl = {
-  local: "http://localhost:4321/minside",
-  development: "https://www.ansatt.dev.nav.no/minside/",
-  production: "https://www.nav.no/minside/",
+  local: "http://localhost:4321/tms-astro-template",
+  development: "https://www.ansatt.dev.nav.no/tms-astro-template/",
+  production: "https://www.nav.no/tms-astro-template/",
 };
 
-export const utkastApiUrl = UTKAST_API_URL[getEnvironment()];
+export const exampleApiUrl = EXAMPLE_API_URL[getEnvironment()];
 export const baseUrl = BASE_URL[getEnvironment()];

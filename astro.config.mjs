@@ -6,9 +6,9 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/utkast",
+  base: "/tms-astro-template", // The base path of your site. Useful for projects hosted under subpaths.
   build: {
-    assetsPrefix: "https://cdn.nav.no/min-side/tms-utkast-frontend",
+    assetsPrefix: "https://cdn.nav.no/min-side/tms-astro-template", // Change this to your CDN prefix
   },
   integrations: [
     react(),
@@ -37,8 +37,5 @@ export default defineConfig({
   output: "server",
   adapter: node({
     mode: "standalone",
-  }),
-  experimental: {
-    serverIslands: true,
-  },
+  })
 });
