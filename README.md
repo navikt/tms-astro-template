@@ -1,13 +1,22 @@
-# tms-utkast-frontend
+# tms-astro-template IdPorten
 
-Frontend for tilgang til liste med utkast
+Dette er en AstroJS frontend template med IdPorten autentisering for eksterne brukere.
 
 # Kom i gang
 
-1. Installer dependencies med npm run install
-2. Bygg tms-utkast-frontend ved å kjøre npm run build
-3. Start hono mockserver med npm run mock
-4. Med mockserver kjørende i egen terminal, start appen lokalt ved å kjøre npm run dev i et nytt terminalvindu
+## Tilpasse templatet til ditt prosjekt
+
+`CMD + Shift + F` og søk etter `tms-astro-template` og erstatt dette med ditt applikasjons navn.
+
+NOTE: Du bør se på konteksten i filen du endrer.
+
+
+#  Kjøre appen lokalt
+
+1. Installer dependencies: `npm i`
+2. Bygge tms-astro-template: `npm run build`
+3. Start hono mockserver: `npm run mock`
+4. Med mockserver kjørende i egen terminal, start appen: `npm run dev`
 4. Appen nås på http://localhost:4321/utkast
 
 # Henvendelser
@@ -15,5 +24,4 @@ Frontend for tilgang til liste med utkast
 Spørsmål knyttet til koden eller prosjektet kan stilles som issues her på github.
 
 ## For NAV-ansatte
-
 Interne henvendelser kan sendes via Slack i kanalen #team-personbruker.
