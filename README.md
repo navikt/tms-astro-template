@@ -17,7 +17,7 @@ NOTE: Du bør se på konteksten i filen du endrer.
 2. Bygge tms-astro-template: `npm run build`
 3. Start hono mockserver: `npm run mock`
 4. Med mockserver kjørende i egen terminal, start appen: `npm run dev`
-4. Appen nås på http://localhost:4321/utkast
+4. Appen nås på http://localhost:4321/tms-astro-template
 
 # Henvendelser
 

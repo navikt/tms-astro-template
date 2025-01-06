@@ -1,5 +1,4 @@
 import { Hono } from "hono";
-import { HTTPException } from 'hono/http-exception';
 import { serve } from "@hono/node-server";
 import { cors } from "hono/cors";
 import example from "./data/example.json";
