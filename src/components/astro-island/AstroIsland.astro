@@ -8,9 +8,11 @@ const exampleData: any = await fetch(exampleApiUrl)
   .then((response) => response.json())
   .then((data) => data);
 
-  const language = Astro.currentLocale as Language
+const language = Astro.currentLocale as Language;
+console.log(exampleApiUrl);
+console.log(exampleData);
 ---
 
 <BodyLong>
-    {text.name[language]}: {exampleData.name}
+  {text.name[language]}: {exampleData.name}
 </BodyLong>
