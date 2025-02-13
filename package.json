@@ -8,7 +8,9 @@
     "build": "astro check && astro build",
     "mock": "tsx mock/server.ts",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky",
+    "prettier": "prettier --write './src/**/*.{ts,tsx,astro}'"  
   },
   "dependencies": {
     "@amplitude/analytics-browser": "2.5.3",
@@ -23,6 +25,7 @@
     "jose": "^5.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "prettier-plugin-astro": "^0.14.1",
     "rollup-plugin-import-map": "3.0.0",
     "swr": "2.2.5"
   },
@@ -32,7 +35,9 @@
     "@types/react": "18.2.64",
     "@types/react-dom": "18.2.21",
     "hono": "4.4.2",
+    "husky": "^9.1.7",
     "tsx": "4.7.1",
+    "prettier": "3.3.3",   
     "typescript": "5.3.3"
   }
 }
