@@ -16,7 +16,7 @@ spec:
   image: {{ image }}
   port: 3000
   liveness:
-    path: tms-astro-t/api/internal/isAlive
+    path: /tms-astro-tenplate/api/internal/isAlive
     initialDelay: 10
   readiness:
     path: /tms-astro-template/api/internal/isReady
